@@ -1,0 +1,75 @@
+@import "~assets/styles/colors";
+
+.search-banner {
+  height: 40rem;
+  margin-top: -7rem;
+  background: url("~assets/images/background-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 0 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h1,
+  h4 {
+    color: #fff;
+  }
+  form {
+    margin-top: 3rem;
+    border-radius: 5rem;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    padding-left: 1rem;
+    input {
+      flex: 1;
+      font-size: 1.6rem;
+      border: 0;
+      outline: none;
+    }
+    button {
+      text-transform: uppercase;
+      padding: 1rem 2.5rem;
+      border-radius: 5rem;
+      font-weight: 600;
+    }
+  }
+}
+
+.search-result {
+  padding: 3rem 0 6rem;
+  background: $black-light url("~assets/images/background-overlay.png");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: repeat-x;
+  h2.title {
+    margin-bottom: 3rem;
+  }
+  .poster {
+    max-width: calc(100% / 4);
+    flex: 0 0 calc(100% / 4);
+    margin-bottom: 3rem;
+  }
+}
+
+.rs-pagination-btn {
+  &.rs-pagination-btn-active {
+    &:hover {
+      a {
+        color: $red !important;
+      }
+    }
+    a {
+      color: $red !important;
+    }
+  }
+  a {
+    &:hover {
+      background: rgba(0, 0, 0, 0.5) !important;
+      color: $red !important;
+    }
+    &:active {
+      color: $red !important;
+    }
+  }
+}

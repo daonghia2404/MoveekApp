@@ -1,0 +1,59 @@
+@import "~assets/styles/colors";
+
+body {
+  background: #000;
+}
+
+.header {
+  position: relative;
+  z-index: 101;
+
+  .header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+
+    .header-logo img {
+      width: 12rem;
+    }
+
+    .header-search {
+      display: flex;
+      align-items: center;
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 3rem;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: #fff;
+        width: 35rem;
+
+        input {
+          width: 32rem;
+          padding: 0 2rem;
+          cursor: pointer;
+        }
+      }
+
+      input {
+        background: transparent;
+        border: 0;
+        font-size: 14px;
+        transition: 0.3s ease;
+        width: 0;
+        padding: 0;
+
+        &::placeholder {
+          font-style: italic;
+        }
+      }
+    }
+
+    img {
+      width: 2rem;
+      cursor: pointer;
+    }
+  }
+}
