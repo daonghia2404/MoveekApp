@@ -42,9 +42,9 @@ const SectionDetail = ({ searchValue, dispatch, match, currentPage }) => {
           .then((res) => res.json())
           .then((data) => setSectionAPI(data));
       } else {
-        // eslint-disable-next-line no-useless-escape
         await fetch(
           `https://api.themoviedb.org/3/movie/${type.replace(
+            // eslint-disable-next-line no-useless-escape
             /\-/,
             "_"
           )}?api_key=${API_KEY}&page=${activePage}`

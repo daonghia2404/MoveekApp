@@ -33,6 +33,9 @@
     "rsuite": "^4.3.3",
     "typescript": "^3.7.5"
   },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -64,9 +67,6 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
-  },
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
   },
   "homepage": "."
 }
