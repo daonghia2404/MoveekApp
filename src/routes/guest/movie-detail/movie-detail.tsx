@@ -81,8 +81,7 @@ export const MovieDetail = (params: any) => {
         .then((data) => setReview(data));
     };
     getReviewMovie();
-    window.scrollTo(0, window.innerHeight * 1.8);
-  }, [activePage, ID]);
+  }, [ID, activePage]);
 
   useEffect(() => {
     setTimeout(() => {

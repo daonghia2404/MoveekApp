@@ -68,5 +68,5 @@
       "pre-commit": "lint-staged"
     }
   },
-  "homepage": "https://github.com/daonghia2404/MoveekApp"
+  "homepage": "."
 }

@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "rsuite/dist/styles/rsuite-default.css";
 
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import { customHistory } from "common/history";
 
 import { Home } from "routes/guest/home/home";
@@ -22,13 +22,7 @@ const App = () => {
       <div className="App">
         <Router history={customHistory}>
           <Route path="/" exact component={Home}></Route>
-          <Switch>
-            <Route
-              path="/movie-detail/:id"
-              exact
-              component={MovieDetail}
-            ></Route>
-          </Switch>
+          <Route path="/movie-detail/:id" exact component={MovieDetail}></Route>
           <Route
             path="/section-detail/:type"
             exact
